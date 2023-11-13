@@ -160,5 +160,83 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "39951DD1-857E-44C2-8EF6-22D05C1060CE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FetchiOSTakeHome/MealDetail/MealDetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "fetchDessertInfo(id:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "39951DD1-857E-44C2-8EF6-22D05C1060CE - 4b50ebad14c411e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for FetchiOSTakeHome.MealDetailViewModel.fetchDessertInfo(id: Swift.Int) async -&gt; ()"
+                  moduleName = "FetchiOSTakeHome"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/najiahaider/Desktop/myApps/FetchiOSTakeHome/FetchiOSTakeHome/MealDetail/MealDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "1692">
+               </Location>
+               <Location
+                  uuid = "39951DD1-857E-44C2-8EF6-22D05C1060CE - 4b50ebad14c411e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for FetchiOSTakeHome.MealDetailViewModel.fetchDessertInfo(id: Swift.Int) async -&gt; ()"
+                  moduleName = "FetchiOSTakeHome"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/najiahaider/Desktop/myApps/FetchiOSTakeHome/FetchiOSTakeHome/MealDetail/MealDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "2630">
+               </Location>
+               <Location
+                  uuid = "39951DD1-857E-44C2-8EF6-22D05C1060CE - 6166843ca2d0b7e5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for FetchiOSTakeHome.MealDetailViewModel.fetchDessertInfo(id: Swift.Int) async -&gt; ()"
+                  moduleName = "FetchiOSTakeHome"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/najiahaider/Desktop/myApps/FetchiOSTakeHome/FetchiOSTakeHome/MealDetail/MealDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "255">
+               </Location>
+               <Location
+                  uuid = "39951DD1-857E-44C2-8EF6-22D05C1060CE - 6166843ca2d0b7e5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for FetchiOSTakeHome.MealDetailViewModel.fetchDessertInfo(id: Swift.Int) async -&gt; ()"
+                  moduleName = "FetchiOSTakeHome"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/najiahaider/Desktop/myApps/FetchiOSTakeHome/FetchiOSTakeHome/MealDetail/MealDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "769">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

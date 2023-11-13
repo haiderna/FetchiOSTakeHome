@@ -8,7 +8,7 @@
 import XCTest
 @testable import FetchiOSTakeHome
 
-final class MealDetailViewModelTests: XCTestCase {
+final class MealDetailSuccessTests: XCTestCase {
     private var networkMock: NetworkManagerProtocol!
     private var viewModel: MealDetailViewModel!
 
@@ -59,5 +59,4 @@ final class MealDetailViewModelTests: XCTestCase {
         XCTAssertNil(viewModel.error)
         XCTAssertFalse(viewModel.isLoading)
     }
-
 }

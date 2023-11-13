@@ -11,6 +11,7 @@ import Foundation
 enum FileOptions {
     case dessertList
     case dessertDetail
+    case emptyDessertDetail
 }
 
 class NetworkSuccessMock: NetworkManagerProtocol {
@@ -26,6 +27,8 @@ class NetworkSuccessMock: NetworkManagerProtocol {
             return try JSONReader.decode(file: "SampleList", type: Meals.self) as! N
         case .dessertDetail:
             return try JSONReader.decode(file: "SampleDessertDetail", type: MealDetail.self) as! N
+        case .emptyDessertDetail:
+            return try JSONReader.decode(file: "DessertDetailEmpty", type: MealDetail.self) as! N
         }
         
     }

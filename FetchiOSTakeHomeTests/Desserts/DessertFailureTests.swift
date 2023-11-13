@@ -8,7 +8,7 @@
 import XCTest
 @testable import FetchiOSTakeHome
 
-final class DessertViewModelFailureTests: XCTestCase {
+final class DessertFailureTests: XCTestCase {
     private var networkMock: NetworkManagerProtocol!
     private var viewModel: DessertViewModel!
 

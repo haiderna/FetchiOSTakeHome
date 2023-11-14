@@ -26,6 +26,7 @@ struct DessertView: View {
                                     MealDetailView(id: item.idMeal)
                                 } label: {
                                     DessertListItem(dessert: item)
+                                        .accessibilityLabel("\(item.strMeal)")
                                 }
                             }
                         }
@@ -43,6 +44,7 @@ struct DessertView: View {
             })
             
             .navigationTitle("Desserts")
+            .accessibilityLabel("Desserts List")
         }
     }
 }

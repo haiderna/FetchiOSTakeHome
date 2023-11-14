@@ -26,9 +26,11 @@ struct MealDetailView: View {
                         ingredientsTitle
                             ForEach(viewModel.ingredientsList, id: \.self) { item in
                                     Text("• \(item)")
+                                    .accessibilityLabel("\(item)")
                             }
                         instructionsTitle
                         Text(viewModel.dessertInfo?.strInstructions ?? "*****")
+                            .accessibilityLabel("\(viewModel.dessertInfo?.strInstructions ?? "*****")")
                     }
                     .padding()
                 }
@@ -45,6 +47,7 @@ struct MealDetailView: View {
             Text(viewModel.error?.localizedDescription ?? "Unrecognized Error")
         })
         .navigationTitle("Recipe Details")
+        .accessibilityLabel("Recipe Details")
         
     }
 }
@@ -60,6 +63,7 @@ extension MealDetailView {
     var title: some View {
         Text(viewModel.dessertInfo?.strMeal ?? "*****")
             .font(.largeTitle)
+            .accessibilityLabel("\(viewModel.dessertInfo?.strMeal ?? "Meal not found")")
         
     }
     
@@ -77,6 +81,7 @@ extension MealDetailView {
             }
             .clipShape(RoundedRectangle(cornerRadius: 16,
                                          style: .continuous))
+            .accessibilityLabel("dessert image")
         }
     }
     
@@ -85,6 +90,7 @@ extension MealDetailView {
         Text("Ingredients List")
             .font(.title2)
             .bold()
+            .accessibilityLabel("Ingredients List")
     }
     
     @ViewBuilder
@@ -92,6 +98,7 @@ extension MealDetailView {
         Text("Instructions")
             .font(.title2)
             .bold()
+            .accessibilityLabel("Instructions Description")
     }
     
     // ALERT UI
@@ -103,11 +110,13 @@ extension MealDetailView {
                 await viewModel.fetchDessertInfo(id:id)
             }
         }
+        .accessibilityLabel("Try Again")
     }
     
     var goBackAlertButton: some View {
         Button("Go Back") {
             presentationMode.wrappedValue.dismiss()
         }
+        .accessibilityLabel("Go Back")
     }
 }

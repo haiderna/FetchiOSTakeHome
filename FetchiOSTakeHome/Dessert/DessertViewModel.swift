@@ -42,9 +42,6 @@ class DessertViewModel: ObservableObject {
             } else {
                 self.error = .customError(error: error)
             }
-            
         }
-        
     }
-    
 }

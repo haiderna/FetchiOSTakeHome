@@ -20,6 +20,9 @@ struct DessertListItem: View {
                     .clipped()
             } else {
                 ProgressView()
+                    .task {
+                        await viewModel.loadImageUsingCache()
+                    }
             }
             VStack(alignment: .center) {
                 Text("\(viewModel.dessert.strMeal)")
@@ -33,9 +36,6 @@ struct DessertListItem: View {
             .padding(.horizontal, 8)
             .padding(.vertical, 5)
             
-        }
-        .task {
-            await viewModel.loadImageUsingCache()
         }
         .clipShape(RoundedRectangle(cornerRadius: 14, style: .circular))
         

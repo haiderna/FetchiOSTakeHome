@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 class DessertListItemViewModel: ObservableObject {
-    let imgCache = Cache()
+    
     let dessert: Dessert
     @Published var uiImage: UIImage?
     
@@ -19,17 +19,16 @@ class DessertListItemViewModel: ObservableObject {
     
     @MainActor
     func loadImageUsingCache() async {
-        
-        if let cachedImg = imgCache.getImage(key: dessert.strMealThumb) {
+    
+        if let cachedImg = Cache.shared.getImage(key: dessert.strMealThumb) {
             uiImage = cachedImg
         } else {
-            
             do {
                 if let url = URL(string: dessert.strMealThumb) {
                     let (data, _) = try await URLSession.shared.data(from: url)
                     if let loadedImg = UIImage(data: data) {
                         uiImage = loadedImg
-                        imgCache.setImage(loadedImg, key: dessert.strMealThumb)
+                        Cache.shared.setImage(loadedImg, key: dessert.strMealThumb)
                     } else {
                         uiImage = nil
                     }
@@ -45,6 +44,11 @@ class DessertListItemViewModel: ObservableObject {
 
 class Cache {
     private let cache = NSCache<NSString, UIImage>()
+    
+    static let shared = Cache()
+    
+    private init() {
+    }
     
     func getImage(key: String) -> UIImage? {
         return cache.object(forKey: key as NSString)

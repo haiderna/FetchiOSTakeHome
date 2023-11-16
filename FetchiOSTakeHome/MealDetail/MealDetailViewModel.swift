@@ -16,7 +16,7 @@ class MealDetailViewModel: ObservableObject {
     
     private var networkManager: NetworkManagerProtocol
     
-    init(networkManager: NetworkManagerProtocol = NetworkManager.shared) {
+    init(networkManager: NetworkManagerProtocol = NetworkManager()) {
         self.networkManager = networkManager
     }
     
@@ -25,7 +25,7 @@ class MealDetailViewModel: ObservableObject {
         isLoading = true
         defer { isLoading = false }
         do {
-            let info = try await networkManager.request(.shared, .dessertDetail(mealId: id), type: MealDetail.self)
+            let info = try await networkManager.request(.dessertDetail(mealId: id), type: MealDetail.self)
             if let mealInfo = info.meals.first {
                 dessertInfo = mealInfo
                 ingredientsList = roundUpIngredientsAndMeasurements( optIngredients: mealInfo.strIngredients, optMeasurements: mealInfo.strMeasure)

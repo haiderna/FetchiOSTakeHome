@@ -17,7 +17,7 @@ class DessertViewModel: ObservableObject {
     
     private let networkManager: NetworkManagerProtocol
     
-    init(networkManager: NetworkManagerProtocol = NetworkManager.shared) {
+    init(networkManager: NetworkManagerProtocol = NetworkManager()) {
         self.networkManager = networkManager
     }
     
@@ -29,7 +29,7 @@ class DessertViewModel: ObservableObject {
         }
         do {
             
-            let response = try await networkManager.request(.shared, .dessert, type: Meals.self)
+            let response = try await networkManager.request(.dessert, type: Meals.self)
             let desserts = response.meals
             self.desserts = desserts.sorted { $0.strMeal < $1.strMeal }
             showErrorAlert = false

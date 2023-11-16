@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MealDetailView: View {
-    @StateObject var viewModel = MealDetailViewModel()
+    @ObservedObject var viewModel: MealDetailViewModel
     let id: Int
     
     @Environment(\.presentationMode) var presentationMode
@@ -54,7 +54,7 @@ struct MealDetailView: View {
 
 struct MealDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        MealDetailView(id: 1)
+        MealDetailView(viewModel: MealDetailViewModel(networkManager: NetworkMealDetailMock()), id: 1)
     }
 }
 

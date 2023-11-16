@@ -21,7 +21,7 @@ class NetworkSuccessMock: NetworkManagerProtocol {
         self.file = file
     }
     
-    func request<N>(_ session: URLSession, _ endpoint: FetchiOSTakeHome.Endpoint, type: N.Type) async throws -> N where N : Decodable, N : Encodable {
+    func request<N>(_ endpoint: FetchiOSTakeHome.Endpoint, type: N.Type) async throws -> N where N : Decodable, N : Encodable {
         switch file {
         case .dessertList:
             return try JSONReader.decode(file: "SampleList", type: Meals.self) as! N
@@ -36,7 +36,7 @@ class NetworkSuccessMock: NetworkManagerProtocol {
 
 class NetworkFailureMock: NetworkManagerProtocol {
     
-    func request<N>(_ session: URLSession, _ endpoint: Endpoint, type: N.Type) async throws -> N where N : Decodable, N : Encodable {
+    func request<N>(_ endpoint: Endpoint, type: N.Type) async throws -> N where N : Decodable, N : Encodable {
         throw NetworkManager.NetworkError.invalidUrl
     }
 }

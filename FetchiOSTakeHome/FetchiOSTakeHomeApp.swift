@@ -11,7 +11,7 @@ import SwiftUI
 struct FetchiOSTakeHomeApp: App {
     var body: some Scene {
         WindowGroup {
-            DessertView()
+            DessertView(viewModel: DessertViewModel())
         }
     }
 }

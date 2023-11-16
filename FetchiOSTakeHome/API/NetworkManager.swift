@@ -8,19 +8,21 @@
 import Foundation
 
 protocol NetworkManagerProtocol {
-    func request<N: Codable>(_ session: URLSession,
-                             _ endpoint: Endpoint,
+    func request<N: Codable>(_ endpoint: Endpoint,
                              type: N.Type ) async throws -> N
 }
 
 
 final class NetworkManager: NetworkManagerProtocol {
+    let session: URLSession
+    let decoder: JSONDecoder
     
-    static let shared = NetworkManager()
+    init(session: URLSession = .shared, decoder: JSONDecoder = JSONDecoder()) {
+        self.session = session
+        self.decoder = decoder
+    }
     
-    private init() {}
-    
-    func request<N>(_ session: URLSession, _ endpoint: Endpoint, type: N.Type) async throws -> N where N : Decodable, N : Encodable {
+    func request<N>(_ endpoint: Endpoint, type: N.Type) async throws -> N where N : Decodable, N : Encodable {
         
         guard let url = endpoint.url else {
             throw NetworkError.invalidUrl
@@ -35,9 +37,6 @@ final class NetworkManager: NetworkManagerProtocol {
             let statusCode = (response as! HTTPURLResponse).statusCode
             throw NetworkError.invalidResponseStatusCode(statusCode: statusCode)
         }
-        
-        let decoder = JSONDecoder()
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
         
         do {
             let res = try decoder.decode(N.self, from: data)

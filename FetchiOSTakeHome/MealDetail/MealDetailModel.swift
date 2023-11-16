@@ -9,6 +9,10 @@ import Foundation
 
 struct MealDetail: Codable {
     let meals: [DessertDetail]
+    
+    init() {
+        self.meals = [DessertDetail()]
+    }
 }
 
 struct DessertDetail: Codable {

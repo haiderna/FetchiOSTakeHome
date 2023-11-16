@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct DessertView: View {
+    @ObservedObject var viewModel: DessertViewModel
     
     private let cols = Array(repeating: GridItem(.flexible()), count: 2)
-    
-    @StateObject var viewModel = DessertViewModel()
     
     var body: some View {
         NavigationView {
@@ -23,9 +22,10 @@ struct DessertView: View {
                         LazyVGrid(columns: cols, spacing: 16) {
                             ForEach(viewModel.desserts, id: \.idMeal) { item in
                                 NavigationLink {
-                                    MealDetailView(id: item.idMeal)
+                                    MealDetailView(viewModel: MealDetailViewModel(),
+                                                   id: item.idMeal)
                                 } label: {
-                                    DessertListItem(dessert: item)
+                                    DessertListItem(viewModel: DessertListItemViewModel(dessert: item))
                                         .accessibilityLabel("\(item.strMeal)")
                                 }
                             }
@@ -51,7 +51,7 @@ struct DessertView: View {
 
 struct DessertView_Previews: PreviewProvider {
     static var previews: some View {
-        DessertView()
+        DessertView(viewModel: DessertViewModel(networkManager: NetworkDessertMock()))
     }
 }
 

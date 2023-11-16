@@ -8,23 +8,21 @@
 import SwiftUI
 
 struct DessertListItem: View {
-    let dessert: Dessert
+    @ObservedObject var viewModel: DessertListItemViewModel
     
     var body: some View {
         VStack(spacing: .zero) {
-            AsyncImage(url: .init(string: dessert.strMealThumb)) { img in
-                img
+            if let img = viewModel.uiImage {
+                Image(uiImage: img)
                     .resizable()
                     .frame(height: 120)
                     .aspectRatio(contentMode: .fit)
                     .clipped()
-                    
-            } placeholder: {
+            } else {
                 ProgressView()
             }
-            
             VStack(alignment: .center) {
-                Text("\(dessert.strMeal)")
+                Text("\(viewModel.dessert.strMeal)")
                     .lineLimit(1)
                     .truncationMode(.tail)
                     .font(.system(.body, weight: .regular))
@@ -36,6 +34,9 @@ struct DessertListItem: View {
             .padding(.vertical, 5)
             
         }
+        .task {
+            await viewModel.loadImageUsingCache()
+        }
         .clipShape(RoundedRectangle(cornerRadius: 14, style: .circular))
         
     }
@@ -43,6 +44,6 @@ struct DessertListItem: View {
 
 struct DessertListItem_Previews: PreviewProvider {
     static var previews: some View {
-        DessertListItem(dessert: Dessert())
+        DessertListItem(viewModel: DessertListItemViewModel(dessert: Dessert()))
     }
 }

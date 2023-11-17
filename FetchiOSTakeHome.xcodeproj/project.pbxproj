@@ -11,6 +11,9 @@
 		A4100B682AFC54C5007C1DE2 /* JSONReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4100B672AFC54C5007C1DE2 /* JSONReader.swift */; };
 		A4100B6A2AFC566F007C1DE2 /* NetworkMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4100B692AFC566F007C1DE2 /* NetworkMocks.swift */; };
 		A4100B6C2AFC5B83007C1DE2 /* MealDetailSuccessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4100B6B2AFC5B83007C1DE2 /* MealDetailSuccessTests.swift */; };
+		A44A5D2C2B080A550028DA14 /* SampleList.json in Resources */ = {isa = PBXBuildFile; fileRef = A4100B652AFC5211007C1DE2 /* SampleList.json */; };
+		A44A5D2D2B080A580028DA14 /* SampleDessertDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = A44D46832AFECCE900584600 /* SampleDessertDetail.json */; };
+		A44A5D2E2B080A5B0028DA14 /* DessertDetailEmpty.json in Resources */ = {isa = PBXBuildFile; fileRef = A456AAC32B01A30600BB641A /* DessertDetailEmpty.json */; };
 		A44D46842AFECCE900584600 /* SampleDessertDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = A44D46832AFECCE900584600 /* SampleDessertDetail.json */; };
 		A44D46862AFEEF8300584600 /* DessertFailureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D46852AFEEF8300584600 /* DessertFailureTests.swift */; };
 		A44D46882AFEF29000584600 /* MealDetailFailureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D46872AFEF29000584600 /* MealDetailFailureTests.swift */; };
@@ -26,8 +29,6 @@
 		A4ACD57B2AF700A900C4B0B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4ACD57A2AF700A900C4B0B8 /* Assets.xcassets */; };
 		A4ACD57E2AF700A900C4B0B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4ACD57D2AF700A900C4B0B8 /* Preview Assets.xcassets */; };
 		A4ACD5882AF700AA00C4B0B8 /* DessertSuccessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACD5872AF700AA00C4B0B8 /* DessertSuccessTests.swift */; };
-		A4ACD5922AF700AA00C4B0B8 /* FetchiOSTakeHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACD5912AF700AA00C4B0B8 /* FetchiOSTakeHomeUITests.swift */; };
-		A4ACD5942AF700AA00C4B0B8 /* FetchiOSTakeHomeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACD5932AF700AA00C4B0B8 /* FetchiOSTakeHomeUITestsLaunchTests.swift */; };
 		A4ACD5A22AF7067700C4B0B8 /* DessertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACD5A12AF7067700C4B0B8 /* DessertView.swift */; };
 		A4ACD5A42AF7069100C4B0B8 /* DessertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACD5A32AF7069100C4B0B8 /* DessertViewModel.swift */; };
 		A4ACD5A82AF706F600C4B0B8 /* MealDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACD5A72AF706F600C4B0B8 /* MealDetailView.swift */; };
@@ -38,13 +39,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		A4ACD5842AF700AA00C4B0B8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A4ACD56B2AF700A500C4B0B8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A4ACD5722AF700A500C4B0B8;
-			remoteInfo = FetchiOSTakeHome;
-		};
-		A4ACD58E2AF700AA00C4B0B8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A4ACD56B2AF700A500C4B0B8 /* Project object */;
 			proxyType = 1;
@@ -75,9 +69,6 @@
 		A4ACD57D2AF700A900C4B0B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A4ACD5832AF700AA00C4B0B8 /* FetchiOSTakeHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchiOSTakeHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4ACD5872AF700AA00C4B0B8 /* DessertSuccessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertSuccessTests.swift; sourceTree = "<group>"; };
-		A4ACD58D2AF700AA00C4B0B8 /* FetchiOSTakeHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchiOSTakeHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4ACD5912AF700AA00C4B0B8 /* FetchiOSTakeHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchiOSTakeHomeUITests.swift; sourceTree = "<group>"; };
-		A4ACD5932AF700AA00C4B0B8 /* FetchiOSTakeHomeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchiOSTakeHomeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A4ACD5A12AF7067700C4B0B8 /* DessertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertView.swift; sourceTree = "<group>"; };
 		A4ACD5A32AF7069100C4B0B8 /* DessertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertViewModel.swift; sourceTree = "<group>"; };
 		A4ACD5A72AF706F600C4B0B8 /* MealDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailView.swift; sourceTree = "<group>"; };
@@ -101,16 +92,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4ACD58A2AF700AA00C4B0B8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A44A5D2B2B080A360028DA14 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A4100B652AFC5211007C1DE2 /* SampleList.json */,
+				A44D46832AFECCE900584600 /* SampleDessertDetail.json */,
+				A456AAC32B01A30600BB641A /* DessertDetailEmpty.json */,
+				A4100B692AFC566F007C1DE2 /* NetworkMocks.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		A44D46892AFEF44E00584600 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,10 +156,7 @@
 			children = (
 				A48912722AF843FD00840025 /* Endpoint.swift */,
 				A48912742AF8461B00840025 /* NetworkManager.swift */,
-				A4100B652AFC5211007C1DE2 /* SampleList.json */,
 				A4100B672AFC54C5007C1DE2 /* JSONReader.swift */,
-				A44D46832AFECCE900584600 /* SampleDessertDetail.json */,
-				A456AAC32B01A30600BB641A /* DessertDetailEmpty.json */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -174,7 +166,6 @@
 			children = (
 				A4ACD5752AF700A500C4B0B8 /* FetchiOSTakeHome */,
 				A4ACD5862AF700AA00C4B0B8 /* FetchiOSTakeHomeTests */,
-				A4ACD5902AF700AA00C4B0B8 /* FetchiOSTakeHomeUITests */,
 				A4ACD5742AF700A500C4B0B8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -184,7 +175,6 @@
 			children = (
 				A4ACD5732AF700A500C4B0B8 /* FetchiOSTakeHome.app */,
 				A4ACD5832AF700AA00C4B0B8 /* FetchiOSTakeHomeTests.xctest */,
-				A4ACD58D2AF700AA00C4B0B8 /* FetchiOSTakeHomeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,20 +203,11 @@
 		A4ACD5862AF700AA00C4B0B8 /* FetchiOSTakeHomeTests */ = {
 			isa = PBXGroup;
 			children = (
+				A44A5D2B2B080A360028DA14 /* Mocks */,
 				A44D468B2AFEF4A300584600 /* MealDetails */,
 				A44D468A2AFEF49400584600 /* Desserts */,
-				A4100B692AFC566F007C1DE2 /* NetworkMocks.swift */,
 			);
 			path = FetchiOSTakeHomeTests;
-			sourceTree = "<group>";
-		};
-		A4ACD5902AF700AA00C4B0B8 /* FetchiOSTakeHomeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A4ACD5912AF700AA00C4B0B8 /* FetchiOSTakeHomeUITests.swift */,
-				A4ACD5932AF700AA00C4B0B8 /* FetchiOSTakeHomeUITestsLaunchTests.swift */,
-			);
-			path = FetchiOSTakeHomeUITests;
 			sourceTree = "<group>";
 		};
 		A4ACD5A02AF7065F00C4B0B8 /* Dessert */ = {
@@ -289,24 +270,6 @@
 			productReference = A4ACD5832AF700AA00C4B0B8 /* FetchiOSTakeHomeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A4ACD58C2AF700AA00C4B0B8 /* FetchiOSTakeHomeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A4ACD59D2AF700AA00C4B0B8 /* Build configuration list for PBXNativeTarget "FetchiOSTakeHomeUITests" */;
-			buildPhases = (
-				A4ACD5892AF700AA00C4B0B8 /* Sources */,
-				A4ACD58A2AF700AA00C4B0B8 /* Frameworks */,
-				A4ACD58B2AF700AA00C4B0B8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A4ACD58F2AF700AA00C4B0B8 /* PBXTargetDependency */,
-			);
-			name = FetchiOSTakeHomeUITests;
-			productName = FetchiOSTakeHomeUITests;
-			productReference = A4ACD58D2AF700AA00C4B0B8 /* FetchiOSTakeHomeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -321,10 +284,6 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					A4ACD5822AF700AA00C4B0B8 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = A4ACD5722AF700A500C4B0B8;
-					};
-					A4ACD58C2AF700AA00C4B0B8 = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = A4ACD5722AF700A500C4B0B8;
 					};
@@ -345,7 +304,6 @@
 			targets = (
 				A4ACD5722AF700A500C4B0B8 /* FetchiOSTakeHome */,
 				A4ACD5822AF700AA00C4B0B8 /* FetchiOSTakeHomeTests */,
-				A4ACD58C2AF700AA00C4B0B8 /* FetchiOSTakeHomeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -367,13 +325,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4ACD58B2AF700AA00C4B0B8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				A44A5D2C2B080A550028DA14 /* SampleList.json in Resources */,
+				A44A5D2E2B080A5B0028DA14 /* DessertDetailEmpty.json in Resources */,
+				A44A5D2D2B080A580028DA14 /* SampleDessertDetail.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,15 +368,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4ACD5892AF700AA00C4B0B8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A4ACD5922AF700AA00C4B0B8 /* FetchiOSTakeHomeUITests.swift in Sources */,
-				A4ACD5942AF700AA00C4B0B8 /* FetchiOSTakeHomeUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -430,11 +375,6 @@
 			isa = PBXTargetDependency;
 			target = A4ACD5722AF700A500C4B0B8 /* FetchiOSTakeHome */;
 			targetProxy = A4ACD5842AF700AA00C4B0B8 /* PBXContainerItemProxy */;
-		};
-		A4ACD58F2AF700AA00C4B0B8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A4ACD5722AF700A500C4B0B8 /* FetchiOSTakeHome */;
-			targetProxy = A4ACD58E2AF700AA00C4B0B8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -651,42 +591,6 @@
 			};
 			name = Release;
 		};
-		A4ACD59E2AF700AA00C4B0B8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5J8WEQMMF5;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.JW.FetchiOSTakeHomeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FetchiOSTakeHome;
-			};
-			name = Debug;
-		};
-		A4ACD59F2AF700AA00C4B0B8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5J8WEQMMF5;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.JW.FetchiOSTakeHomeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FetchiOSTakeHome;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -713,15 +617,6 @@
 			buildConfigurations = (
 				A4ACD59B2AF700AA00C4B0B8 /* Debug */,
 				A4ACD59C2AF700AA00C4B0B8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A4ACD59D2AF700AA00C4B0B8 /* Build configuration list for PBXNativeTarget "FetchiOSTakeHomeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A4ACD59E2AF700AA00C4B0B8 /* Debug */,
-				A4ACD59F2AF700AA00C4B0B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

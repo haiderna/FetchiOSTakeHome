@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DessertListItem: View {
-    @ObservedObject var viewModel: DessertListItemViewModel
+    @StateObject var viewModel: DessertListItemViewModel
     
     var body: some View {
         VStack(spacing: .zero) {
@@ -21,8 +21,8 @@ struct DessertListItem: View {
             } else {
                 ProgressView()
                     .task {
-                        await viewModel.loadImageUsingCache()
-                    }
+                    await viewModel.loadImageUsingCache()
+                }
             }
             VStack(alignment: .center) {
                 Text("\(viewModel.dessert.strMeal)")
